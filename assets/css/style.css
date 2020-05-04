@@ -1,0 +1,70 @@
+/*-------------------- Fonts */
+
+.header-text{
+    font-family: "Roboto",sans-serif;
+    font-size: 3em;
+    text-align: center;
+    color: aliceblue;
+}
+
+/*-------------------- Body */
+/*-------- Code adapted from this link - https://css-tricks.com/perfect-full-page-background-image/     */
+.bg-image{  
+    height: auto;
+    width: 100%;
+    min-width: 1280px;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+@media(max-width: 1280px){
+    .bg-image{
+        left: 50%;
+        margin-left: -640px; 
+    }
+}
+
+
+/*------ End of Adapted Code */
+/*-------------------- Basic formatting */
+.no-margin{
+    margin: 0;
+}
+.no-padding{
+    padding: 0;
+}
+
+
+/*-------------------- Header */
+
+
+
+
+.header-container{
+    background-color: rgba(0,0,0,.5);
+    padding: 20px;
+    
+}
+
+.header-text-container{
+    margin: 0 auto;
+    
+}
+
+.logo-img{
+    width: 100%;
+}
+
+
+
+
+
+/*-------------------- Footer */
+.footer-container{
+    background-color: rgba(0,0,0,.5);
+    position: fixed;
+    bottom: 0;
+    height: 10%;
+    min-height: 40px;
+    width: 100%
+}
