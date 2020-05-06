@@ -107,20 +107,21 @@ ul{
 }
 .bulb{
     margin: auto;
-    
     height: 100%;
     
+    
 }
-
 .bulb-unlit{
     background: url("../img/bulb-unlit.jpg");
     background-repeat:no-repeat;
     background-size: contain;
+    background-position: center;
 }
 .bulb-lit{
     background: url("../img/bulb-lit.jpg");
     background-repeat:no-repeat;
     background-size: contain;
+    background-position: center;
 }
 
 /*-------------------- Footer */
