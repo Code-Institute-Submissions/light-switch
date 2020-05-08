@@ -93,17 +93,23 @@ ul{
 .lights-container{
     height: 80%;
 }
-.bulb-container{
-    display: none;
+.bulb-container.l1{
+    height: 50%;
     
 }
-.active-level{
-    display: block;
+.bulb-container.l2{
+    height: 33.3333%;
+}
+.l1,.l2,.l3{
+    display:none;
 }
 
-.l1{
+.bulb-container{
     
     padding-top: 1%
+}
+.switch-box{
+    padding-top: 2px;
 }
 .bulb{
     margin: auto;
@@ -124,6 +130,36 @@ ul{
     background-position: center;
 }
 
+.switch-container{
+    height: 20%;
+    padding-top: 2%;
+    
+}
+
+.switch-box{
+    height: 50%
+    
+}
+.switch-outline{
+    border-radius: 50%;
+    background-color: #4a4949;
+    height: 100%;
+    
+}
+.switch{
+    border-radius: 50%;
+    height: 80%;
+    width: 80%;
+    background-color: red;
+    z-index: 100;
+    
+    
+}
+
+
+.active-level{
+    display: block;
+}
 /*-------------------- Footer */
 .footer-container{
     background-color: rgba(0,0,0,.5);
@@ -134,3 +170,5 @@ ul{
     width: 100%
     
 }
+
+
