@@ -24,8 +24,11 @@
         margin-left: -640px; 
     }
 }
-
-
+@media(min-width: 576px){
+    body{
+        overflow: hidden;
+    }
+}
 /*------ End of Adapted Code */
 /*-------------------- Basic formatting */
 .no-margin{
@@ -44,14 +47,15 @@
     }
 }
 /*-------------------- Header */
-
-
-
-
 .header-container{
     background-color: rgba(0,0,0,.5);
     padding: 20px;
-    height: 100%;   
+    height: 100%
+}
+@media(min-width: 576px){
+    .header-container{
+        min-height: 100vh;
+    }
 }
 
 .header-text-container{
@@ -78,7 +82,8 @@ ul{
 }
 /*-------------------- Game */
 .game-outer{
-    padding: 15px
+    padding: 15px;
+    height: 95vh;
 }
 
 .game-container{
@@ -93,6 +98,9 @@ ul{
 .lights-container{
     height: 80%;
 }
+.bulb-section, .switch-section{
+    height: 100%
+}
 .bulb-container.l1{
     height: 50%;
     
@@ -100,7 +108,7 @@ ul{
 .bulb-container.l2{
     height: 33.3333%;
 }
-.l1,.l2,.l3{
+.level-1,.level-2,.level-3{
     display:none;
 }
 
@@ -111,11 +119,10 @@ ul{
 .switch-box{
     padding-top: 2px;
 }
+
 .bulb{
     margin: auto;
     height: 100%;
-    
-    
 }
 .bulb-unlit{
     background: url("../img/bulb-unlit.jpg");
@@ -136,14 +143,18 @@ ul{
     
 }
 
-.switch-box{
+.switch-box-l2{
     height: 50%
-    
+}
+.switch-box-l3{
+    height: 33%;
 }
 .switch-outline{
     border-radius: 50%;
     background-color: #4a4949;
     height: 100%;
+    width: 60%;
+    margin-left:20%;
     
 }
 .switch{
