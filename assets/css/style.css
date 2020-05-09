@@ -6,7 +6,11 @@
     text-align: center;
     color: aliceblue;
 }
-
+.container-header{
+    font-size: 1.5em;
+    margin:0;
+    
+}
 /*-------------------- Body */
 /*-------- Code adapted from this link - https://css-tricks.com/perfect-full-page-background-image/     */
 .bg-image{  
@@ -86,14 +90,14 @@ ul{
     height: 95vh;
 }
 
-.game-container{
+.game-container, .instructions-container, .levelselect-container, .stats-container{
     
     height: 85%;
     background-color: rgba(0,0,0,.5);
     min-height: 45vh;
     padding: 2.5%;
     margin-top: 10px;
-    
+    display: none;
 }
 .lights-container{
     height: 80%;
@@ -161,15 +165,35 @@ ul{
     border-radius: 50%;
     height: 80%;
     width: 80%;
-    background-color: red;
-    z-index: 100;
-    
-    
+    background-color: red; 
 }
 
 
-.active-level{
+.active-level, .active-container{
     display: block;
+}
+/*-------------------- Secondary Tabs */
+.instructions-container, .levelselect-container, .stats-container{
+    padding: 0;
+}
+
+
+.exit-box{
+    right: 0;
+    top: 0;
+    width: 24px;
+    height: 24px;
+    float: right;
+}
+.exit-btn{
+    background-color: #1b1b1b;
+}
+.close-symbol{
+    color:aliceblue
+}
+hr{
+    background-color: aliceblue;
+    margin-top: 0;
 }
 /*-------------------- Footer */
 .footer-container{
