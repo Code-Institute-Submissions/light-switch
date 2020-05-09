@@ -4,6 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Load Jasmine Framnework-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jasmine/3.5.0/jasmine.js" integrity="sha256-PePX8Jc4TIxzzVz0Qe4NsH3OUU8+Y49DBWvYgggNqkY=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jasmine/3.5.0/jasmine-html.js" integrity="sha256-qazAASTTgUrq9SOYkPSB3oEuqbhn+2j4kxGkVZ0GKjY=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jasmine/3.5.0/boot.js" integrity="sha256-HG8TKl0T65NyELmbUoo0H7/a1e++smYdXXtuuEsyKok=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jasmine/3.5.0/jasmine.min.css" integrity="sha256-US46s8iE//XjSFdoo70XyCnsGALF7ggrHbPCHqvoRn4=" crossorigin="anonymous" />
+    <!-- Jquery CDN-->
+    <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+
+
     <script src="assets/js/script.js"></script>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Lato|Roboto&display=swap" rel="stylesheet">
@@ -35,31 +44,23 @@
                             <ul>    
                                 <div class="row">
                                     <div class="col-6 col-sm-12  nav-option-container">
-                                        <ul class="list-item">Instructions</ul>
+                                        <ul class="list-item" id="instructions-link">Instructions</ul>
                                     </div>
                                     <div class="col-6 col-sm-12 nav-option-container">
-                                        <ul class="list-item">Reset</ul>
+                                        <ul class="list-item" id="reset-link">Reset</ul>
                                     </div>
                                     <div class="col-6 col-sm-12 nav-option-container">
-                                        <ul class="list-item">Select Level</ul>
+                                        <ul class="list-item" id="level-select-link">Select Level</ul>
                                     </div>
                                     <div class="col-6 col-sm-12 nav-option-container">
-                                        <ul class="list-item">View Stats</ul>
+                                        <ul class="list-item" id="stats-link">View Stats</ul>
                                     </div>
                                 </div>
-
-
-
                             </ul>
-                        </div>
-                    
+                        </div>                    
                     </div>
-
                 </nav>
-
-
-            </div>
-            
+            </div>           
             <div class="col-12 col-sm-9 col-xl-10 game-outer">
                 <div class="game-container">
                     <div class="row lights-container">
@@ -320,29 +321,54 @@
                         </div>
                     </div>
                 </div>
-                <div class="instructions-container active-container">
+                <div class="instructions-container">
                     <div class="row">
                         <div class="col-12 container-title">
-                            <div class="exit-box"><button id="instructions-exit-box" class="exit-btn"><span class="close-symbol mx-auto">x</span></button></div>
+                            <div class="exit-box"><button class="exit-btn"><span class="close-symbol mx-auto">x</span></button></div>
                             <h2 class="header-text container-header">Instructions</h2>     
                             <hr>            
                         </div>
                     </div>
                 </div>
-                <div class="levelselect-container">
-                    <div class="row">
+                <div class="levelselect-container active-container">
+                    <div class="row full-size">
                         <div class="col-12 container-title">
-                            <div class="exit-box"><button id="levelselect-exit-box" class="exit-btn"><span class="close-symbol mx-auto">x</span></button></div>
-                            <h2 class="header-text container-header">Instructions</h2>     
+                            <div class="exit-box"><button class="exit-btn"><span class="close-symbol mx-auto">x</span></button></div>
+                            <h2 class="header-text container-header">Select Level</h2>     
                             <hr>            
+                        </div>
+                        <div class="col-12 diff-section"><h3 class="header-text mini-header">Easy</h3>
+                            <div class="row">
+                                <div class="col-3"><button id="easy-l1" class = "diff-btn easy-lvl"><span class = "level-btn-text">1</span></button></div>
+                                <div class="col-3"><button id="easy-l2" class = "diff-btn easy-lvl"><span class = "level-btn-text">2</span></button></div>
+                                <div class="col-3"><button id="easy-l3" class = "diff-btn easy-lvl"><span class = "level-btn-text">3</span></button></div>
+                                <div class="col-3"><button id="easy-l4" class = "diff-btn easy-lvl"><span class = "level-btn-text">4</span></button></div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 diff-section"><h3 class="header-text mini-header">Medium</h3>
+                            <div class="row">
+                                <div class="col-3"><button id="med-l1" class = "diff-btn med-lvl"><span class = "level-btn-text">5</span></button></div>
+                                <div class="col-3"><button id="med-l2" class = "diff-btn med-lvl"><span class = "level-btn-text">6</span></button></div>
+                                <div class="col-3"><button id="med-l3" class = "diff-btn med-lvl"><span class = "level-btn-text">7</span></button></div>
+                                <div class="col-3"><button id="med-l4" class = "diff-btn med-lvl"><span class = "level-btn-text">8</span></button></div>
+                            </div>
+                        </div>
+                        <div class="col-12 diff-section"><h3 class="header-text mini-header">Hard</h3>
+                            <div class="row">
+                                <div class="col-3"><button id="hard-l1" class = "diff-btn hard-lvl"><span class = "level-btn-text">9</span></button></div>
+                                <div class="col-3"><button id="hard-l2" class = "diff-btn hard-lvl"><span class = "level-btn-text">10</span></button></div>
+                                <div class="col-3"><button id="hard-l3" class = "diff-btn hard-lvl"><span class = "level-btn-text">11</span></button></div>
+                                <div class="col-3"><button id="hard-l4" class = "diff-btn hard-lvl"><span class = "level-btn-text">12</span></button></div>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="stats-container">
                     <div class="row">
                         <div class="col-12 container-title">
-                            <div class="exit-box"><button id="stats-exit-box" class="exit-btn"><span class="close-symbol mx-auto">x</span></button></div>
-                            <h2 class="header-text container-header">Instructions</h2>     
+                            <div class="exit-box"><button class="exit-btn"><span class="close-symbol mx-auto">x</span></button></div>
+                            <h2 class="header-text container-header">Stats</h2>     
                             <hr>            
                         </div>
                     </div>
@@ -371,5 +397,8 @@
         
     
     
+
+
+	
 </body>
 </html>

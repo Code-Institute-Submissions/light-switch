@@ -7,9 +7,11 @@
     color: aliceblue;
 }
 .container-header{
+    font-size: 2em;
+    margin:0; 
+}
+.mini-header{
     font-size: 1.5em;
-    margin:0;
-    
 }
 /*-------------------- Body */
 /*-------- Code adapted from this link - https://css-tricks.com/perfect-full-page-background-image/     */
@@ -181,12 +183,14 @@ ul{
 .exit-box{
     right: 0;
     top: 0;
-    width: 24px;
-    height: 24px;
+    width: 40px;
+    height: 40px;
     float: right;
 }
 .exit-btn{
     background-color: #1b1b1b;
+    height:40px;
+    width: 40px
 }
 .close-symbol{
     color:aliceblue
@@ -203,7 +207,15 @@ hr{
     height: 5%;
     min-height: 40px;
     width: 100%
-    
 }
-
-
+.full-size{
+    height: 100%;
+}
+.diff-btn{
+    margin: 0 auto;
+    width: 80%;
+    display: block;
+}
+.diff-section{
+    height: 30%;
+}
