@@ -5,36 +5,9 @@ $( document ).ready(function() {
     var switchClick
     var currentDifficulty
 
-    //Declaring Switch Variables
-    //level 1
-    var l1s1
-    var l1s2
-    var l1s3
-    var l1s4
-    //level 2
-    var l2s1
-    var l2s2
-    var l2s3
-    var l2s4
-    var l2s5
-    var l2s6
-    var l2s7
-    var l2s8
-    //level 3
-    var l3s1
-    var l3s2
-    var l3s3
-    var l3s4
-    var l3s5
-    var l3s6
-    var l3s7
-    var l3s8
-    var l3s9
-    var l3s10
-    var l3s11
-    var l3s12
-
-
+    //declaring level bests
+    var bestStats = ["n/a", "n/a", "n/a", "n/a", "n/a", "n/a", "n/a", "n/a", "n/a", "n/a", "n/a", "n/a"]
+    
 
     var openGameContainer = function(){
         $(".levelselect-container").removeClass("active-container")
@@ -71,11 +44,21 @@ $( document ).ready(function() {
         currentDifficulty = "3"
         openGameContainer()
     })
+    $("#reset-link").on("click", function(){
+        resetAll()
+    })
     var switchBuilder = function(currentLevel, switchClickedID){
         
         switch(currentLevel) {
             case "1":
-            
+                case "l1s1":
+                        return ["on","on","on","on","on","on"]
+                    case "l1s2":
+                        return ["on","on","on","on","on","on"]
+                    case "l1s3":
+                        return ["on","on","on","on","on","on"]
+                    case "l1s4":
+                        return ["on","on","on","on","on","on"]
             break;  
             case "2":
 
@@ -84,16 +67,12 @@ $( document ).ready(function() {
                 switch(switchClickedID){
                     case "l1s1":
                         return ["on","on","null","flip","null","null"]
-                    break
                     case "l1s2":
                         return ["null","on","flip","flip","null","null"]
-                    break
                     case "l1s3":
                         return ["null","flip","null","flip","on","null"]
-                    break
                     case "l1s4":
                         return ["flip","null","null","flip","null","flip"]
-                    break
                 }
             break
             case "4":
@@ -157,12 +136,11 @@ $( document ).ready(function() {
 
     // Code Adapted From https://stackoverflow.com/questions/10578566/jquery-this-id-return-undefined8
     $(".switch").click(function (e) {
+        scoreCounter = scoreCounter+1
         switchClick = e.target.id
-        
-        
-        
         changeArray = switchBuilder(currentLevel, switchClick)
         makeChanges(changeArray)
+        checkIfComplete(currentDifficulty)
     });
     //end of adapted code
     function makeChanges(changeArray){
@@ -192,5 +170,39 @@ $( document ).ready(function() {
                 bulbNull(bulbClass)
             break
         }
+    }
+
+
+    function checkIfComplete(currentDifficulty){
+        let bulbCount
+        switch(currentDifficulty){
+            case("1"):
+                bulbCount = 6
+            break
+            case("2"):
+                bulbCount = 9
+            break
+            case("3"):
+                bulbCount = 18
+            break
+        }
+        
+        var difficultyClass = `.level-${currentDifficulty}`
+        
+        if ($(`${difficultyClass}.bulb-section`).find('.bulb-lit').length == $(`${difficultyClass}.bulb-section`).children().children().length){
+            winningMessage(currentLevel, scoreCounter, currentDifficulty)
+            
+        }
+    }
+    function winningMessage(currentLevel, scoreCounter, currentDifficulty){
+        setStats(currentLevel, scoreCounter, bestStats)
+        alert(bestStats)
+    
+    }
+    var setStats = function(currentLevel, scoreToSet, bestStats){
+        if(scoreToSet < bestStats[currentLevel-1] || bestStats[currentLevel-1] == "n/a"){
+            bestStats[currentLevel -1] = scoreToSet
+        }
+        return bestStats
     }
 })
