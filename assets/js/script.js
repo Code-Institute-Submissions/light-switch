@@ -51,7 +51,8 @@ $( document ).ready(function() {
         
         switch(currentLevel) {
             case "1":
-                case "l1s1":
+                switch(switchClickedID){
+                    case "l1s1":
                         return ["on","on","on","on","on","on"]
                     case "l1s2":
                         return ["on","on","on","on","on","on"]
@@ -59,9 +60,19 @@ $( document ).ready(function() {
                         return ["on","on","on","on","on","on"]
                     case "l1s4":
                         return ["on","on","on","on","on","on"]
+                }
             break;  
             case "2":
-
+                switch(switchClickedID){
+                    case "l1s1":
+                        return ["on","on","on","on","on","on"]
+                    case "l1s2":
+                        return ["on","on","on","on","on","on"]
+                    case "l1s3":
+                        return ["on","on","on","on","on","on"]
+                    case "l1s4":
+                        return ["on","on","on","on","on","on"]
+                }
             break;
             case "3":
                 switch(switchClickedID){
@@ -76,6 +87,16 @@ $( document ).ready(function() {
                 }
             break
             case "4":
+                switch(switchClickedID){
+                    case "l1s1":
+                        return ["on","on","on","on","on","on"]
+                    case "l1s2":
+                        return ["on","on","on","on","on","on"]
+                    case "l1s3":
+                        return ["on","on","on","on","on","on"]
+                    case "l1s4":
+                        return ["on","on","on","on","on","on"]
+                }
 
             break;
         }
@@ -202,7 +223,9 @@ $( document ).ready(function() {
     var setStats = function(currentLevel, scoreToSet, bestStats){
         if(scoreToSet < bestStats[currentLevel-1] || bestStats[currentLevel-1] == "n/a"){
             bestStats[currentLevel -1] = scoreToSet
+            $(`#l${currentLevel}-score`).text(scoreToSet)
         }
+
         return bestStats
     }
 })

@@ -13,6 +13,18 @@
 .mini-header{
     font-size: 1.5em;
 }
+.content-text{
+    font-family: "Lato",sans-serif;
+    font-size: 1em;
+    color: aliceblue;
+    text-align: center;
+}
+
+.level-title{
+    color: aliceblue;
+    font-size: 1.2em;
+    text-align: center;
+}
 /*-------------------- Body */
 /*-------- Code adapted from this link - https://css-tricks.com/perfect-full-page-background-image/     */
 .bg-image{  
@@ -198,6 +210,9 @@ ul{
 hr{
     background-color: aliceblue;
     margin-top: 0;
+}
+.stats-level-container{
+    height: 30%;
 }
 /*-------------------- Footer */
 .footer-container{
