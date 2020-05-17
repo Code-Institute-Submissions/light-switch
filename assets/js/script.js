@@ -53,25 +53,25 @@ $( document ).ready(function() {
             case "1":
                 switch(switchClickedID){
                     case "l1s1":
-                        return ["on","on","on","on","on","on"]
+                        return ["on","null","on","null","null","off"]
                     case "l1s2":
-                        return ["on","on","on","on","on","on"]
+                        return ["null","on","null","null","null","on"]
                     case "l1s3":
-                        return ["on","on","on","on","on","on"]
+                        return ["null","null","off","on","null","null"]
                     case "l1s4":
-                        return ["on","on","on","on","on","on"]
+                        return ["null","null","null","null","on","null"]
                 }
             break;  
             case "2":
                 switch(switchClickedID){
                     case "l1s1":
-                        return ["on","on","on","on","on","on"]
+                        return ["on","null","on","off","null","flip"]
                     case "l1s2":
-                        return ["on","on","on","on","on","on"]
+                        return ["flip","off","on","on","null","null"]
                     case "l1s3":
-                        return ["on","on","on","on","on","on"]
+                        return ["null","on","null","flip","on","flip"]
                     case "l1s4":
-                        return ["on","on","on","on","on","on"]
+                        return ["flip","null","null","null","null","on"]
                 }
             break;
             case "3":
@@ -89,15 +89,207 @@ $( document ).ready(function() {
             case "4":
                 switch(switchClickedID){
                     case "l1s1":
-                        return ["on","on","on","on","on","on"]
+                        return ["flip","flip","null","on","flip","null"]
                     case "l1s2":
-                        return ["on","on","on","on","on","on"]
+                        return ["on","off","off","null","off","on"]
                     case "l1s3":
-                        return ["on","on","on","on","on","on"]
+                        return ["off","null","flip","null","on","off"]
                     case "l1s4":
-                        return ["on","on","on","on","on","on"]
+                        return ["null","null","on","on","flip","flip"]
                 }
 
+            break;
+            case "5":
+                switch(switchClickedID){
+                    case "l2s1":
+                        return ["on","flip","on","off","null","on", "flip", "on", "null"]
+                    case "l2s2":
+                        return ["off","on","null","on","null","null", "off", "null", "on"]
+                    case "l2s3":
+                        return ["flip","null","null","null","on","null", "null", "on", "null"]
+                    case "l2s4":
+                        return ["null","null","null","off","null","on", "on", "null", "null"]
+                    case "l2s5":
+                        return ["null","flip","off","null","null","null", "flip", "off", "null"]
+                    case "l2s6":
+                        return ["null","flip","null","null","off","null", "null", "null", "on"]
+                    case "l2s7":
+                        return ["null","null","on","null","null","on", "off", "off", "null"]
+                    case "l2s8":
+                        return ["on","null","on","on","flip","null", "on", "on", "null"]
+                }
+            break;
+            case "6":
+                switch(switchClickedID){
+                    case "l2s1":
+                        return ["null","null","null","null","null","null", "null", "null", "null"]
+                    case "l2s2":
+                        return ["null","null","null","null","null","null", "null", "null", "null"]
+                    case "l2s3":
+                        return ["null","null","null","null","null","null", "null", "null", "null"]
+                    case "l2s4":
+                        return ["null","null","null","null","null","null", "null", "null", "null"]
+                    case "l2s5":
+                        return ["null","null","null","null","null","null", "null", "null", "null"]
+                    case "l2s6":
+                        return ["null","null","null","null","null","null", "null", "null", "null"]
+                    case "l2s7":
+                        return ["null","null","null","null","null","null", "null", "null", "null"]
+                    case "l2s8":
+                        return ["null","null","null","null","null","null", "null", "null", "null"]
+                }
+            break;
+            case "7":
+                switch(switchClickedID){
+                    case "l2s1":
+                        return ["null","null","null","null","null","null", "null", "null", "null"]
+                    case "l2s2":
+                        return ["null","null","null","null","null","null", "null", "null", "null"]
+                    case "l2s3":
+                        return ["null","null","null","null","null","null", "null", "null", "null"]
+                    case "l2s4":
+                        return ["null","null","null","null","null","null", "null", "null", "null"]
+                    case "l2s5":
+                        return ["null","null","null","null","null","null", "null", "null", "null"]
+                    case "l2s6":
+                        return ["null","null","null","null","null","null", "null", "null", "null"]
+                    case "l2s7":
+                        return ["null","null","null","null","null","null", "null", "null", "null"]
+                    case "l2s8":
+                        return ["null","null","null","null","null","null", "null", "null", "null"]
+                }
+            break;
+            case "8":
+                switch(switchClickedID){
+                    case "l2s1":
+                        return ["null","null","null","null","null","null", "null", "null", "null"]
+                    case "l2s2":
+                        return ["null","null","null","null","null","null", "null", "null", "null"]
+                    case "l2s3":
+                        return ["null","null","null","null","null","null", "null", "null", "null"]
+                    case "l2s4":
+                        return ["null","null","null","null","null","null", "null", "null", "null"]
+                    case "l2s5":
+                        return ["null","null","null","null","null","null", "null", "null", "null"]
+                    case "l2s6":
+                        return ["null","null","null","null","null","null", "null", "null", "null"]
+                    case "l2s7":
+                        return ["null","null","null","null","null","null", "null", "null", "null"]
+                    case "l2s8":
+                        return ["null","null","null","null","null","null", "null", "null", "null"]
+                }
+            break;
+            case "9":
+                switch(switchClickedID){
+                    case "l3s1":
+                        return ["null","null","null","null","null","null", "null", "null", "null","null","null","null","null","null","null", "null", "null", "null"]
+                    case "l3s2":
+                        return ["null","null","null","null","null","null", "null", "null", "null","null","null","null","null","null","null", "null", "null", "null"]
+                    case "l3s3":
+                        return ["null","null","null","null","null","null", "null", "null", "null","null","null","null","null","null","null", "null", "null", "null"]
+                    case "l3s4":
+                        return ["null","null","null","null","null","null", "null", "null", "null","null","null","null","null","null","null", "null", "null", "null"]
+                    case "l3s5":
+                        return ["null","null","null","null","null","null", "null", "null", "null","null","null","null","null","null","null", "null", "null", "null"]
+                    case "l3s6":
+                        return ["null","null","null","null","null","null", "null", "null", "null","null","null","null","null","null","null", "null", "null", "null"]
+                    case "l3s7":
+                        return ["null","null","null","null","null","null", "null", "null", "null","null","null","null","null","null","null", "null", "null", "null"]
+                    case "l3s8":
+                        return ["null","null","null","null","null","null", "null", "null", "null","null","null","null","null","null","null", "null", "null", "null"]
+                    case "l3s9":
+                        return ["null","null","null","null","null","null", "null", "null", "null","null","null","null","null","null","null", "null", "null", "null"]
+                    case "l3s10":
+                        return ["null","null","null","null","null","null", "null", "null", "null","null","null","null","null","null","null", "null", "null", "null"]
+                    case "l3s11":
+                        return ["null","null","null","null","null","null", "null", "null", "null","null","null","null","null","null","null", "null", "null", "null"]
+                    case "l3s12":
+                        return ["null","null","null","null","null","null", "null", "null", "null","null","null","null","null","null","null", "null", "null", "null"]
+                }
+            break;
+            case "10":
+                switch(switchClickedID){
+                    case "l3s1":
+                        return ["null","null","null","null","null","null", "null", "null", "null","null","null","null","null","null","null", "null", "null", "null"]
+                    case "l3s2":
+                        return ["null","null","null","null","null","null", "null", "null", "null","null","null","null","null","null","null", "null", "null", "null"]
+                    case "l3s3":
+                        return ["null","null","null","null","null","null", "null", "null", "null","null","null","null","null","null","null", "null", "null", "null"]
+                    case "l3s4":
+                        return ["null","null","null","null","null","null", "null", "null", "null","null","null","null","null","null","null", "null", "null", "null"]
+                    case "l3s5":
+                        return ["null","null","null","null","null","null", "null", "null", "null","null","null","null","null","null","null", "null", "null", "null"]
+                    case "l3s6":
+                        return ["null","null","null","null","null","null", "null", "null", "null","null","null","null","null","null","null", "null", "null", "null"]
+                    case "l3s7":
+                        return ["null","null","null","null","null","null", "null", "null", "null","null","null","null","null","null","null", "null", "null", "null"]
+                    case "l3s8":
+                        return ["null","null","null","null","null","null", "null", "null", "null","null","null","null","null","null","null", "null", "null", "null"]
+                    case "l3s9":
+                        return ["null","null","null","null","null","null", "null", "null", "null","null","null","null","null","null","null", "null", "null", "null"]
+                    case "l3s10":
+                        return ["null","null","null","null","null","null", "null", "null", "null","null","null","null","null","null","null", "null", "null", "null"]
+                    case "l3s11":
+                        return ["null","null","null","null","null","null", "null", "null", "null","null","null","null","null","null","null", "null", "null", "null"]
+                    case "l3s12":
+                        return ["null","null","null","null","null","null", "null", "null", "null","null","null","null","null","null","null", "null", "null", "null"]
+                }
+            break;
+            case "11":
+                switch(switchClickedID){
+                    case "l3s1":
+                        return ["null","null","null","null","null","null", "null", "null", "null","null","null","null","null","null","null", "null", "null", "null"]
+                    case "l3s2":
+                        return ["null","null","null","null","null","null", "null", "null", "null","null","null","null","null","null","null", "null", "null", "null"]
+                    case "l3s3":
+                        return ["null","null","null","null","null","null", "null", "null", "null","null","null","null","null","null","null", "null", "null", "null"]
+                    case "l3s4":
+                        return ["null","null","null","null","null","null", "null", "null", "null","null","null","null","null","null","null", "null", "null", "null"]
+                    case "l3s5":
+                        return ["null","null","null","null","null","null", "null", "null", "null","null","null","null","null","null","null", "null", "null", "null"]
+                    case "l3s6":
+                        return ["null","null","null","null","null","null", "null", "null", "null","null","null","null","null","null","null", "null", "null", "null"]
+                    case "l3s7":
+                        return ["null","null","null","null","null","null", "null", "null", "null","null","null","null","null","null","null", "null", "null", "null"]
+                    case "l3s8":
+                        return ["null","null","null","null","null","null", "null", "null", "null","null","null","null","null","null","null", "null", "null", "null"]
+                    case "l3s9":
+                        return ["null","null","null","null","null","null", "null", "null", "null","null","null","null","null","null","null", "null", "null", "null"]
+                    case "l3s10":
+                        return ["null","null","null","null","null","null", "null", "null", "null","null","null","null","null","null","null", "null", "null", "null"]
+                    case "l3s11":
+                        return ["null","null","null","null","null","null", "null", "null", "null","null","null","null","null","null","null", "null", "null", "null"]
+                    case "l3s12":
+                        return ["null","null","null","null","null","null", "null", "null", "null","null","null","null","null","null","null", "null", "null", "null"]
+                }
+            break;
+            case "12":
+                switch(switchClickedID){
+                    case "l3s1":
+                        return ["null","null","null","null","null","null", "null", "null", "null","null","null","null","null","null","null", "null", "null", "null"]
+                    case "l3s2":
+                        return ["null","null","null","null","null","null", "null", "null", "null","null","null","null","null","null","null", "null", "null", "null"]
+                    case "l3s3":
+                        return ["null","null","null","null","null","null", "null", "null", "null","null","null","null","null","null","null", "null", "null", "null"]
+                    case "l3s4":
+                        return ["null","null","null","null","null","null", "null", "null", "null","null","null","null","null","null","null", "null", "null", "null"]
+                    case "l3s5":
+                        return ["null","null","null","null","null","null", "null", "null", "null","null","null","null","null","null","null", "null", "null", "null"]
+                    case "l3s6":
+                        return ["null","null","null","null","null","null", "null", "null", "null","null","null","null","null","null","null", "null", "null", "null"]
+                    case "l3s7":
+                        return ["null","null","null","null","null","null", "null", "null", "null","null","null","null","null","null","null", "null", "null", "null"]
+                    case "l3s8":
+                        return ["null","null","null","null","null","null", "null", "null", "null","null","null","null","null","null","null", "null", "null", "null"]
+                    case "l3s9":
+                        return ["null","null","null","null","null","null", "null", "null", "null","null","null","null","null","null","null", "null", "null", "null"]
+                    case "l3s10":
+                        return ["null","null","null","null","null","null", "null", "null", "null","null","null","null","null","null","null", "null", "null", "null"]
+                    case "l3s11":
+                        return ["null","null","null","null","null","null", "null", "null", "null","null","null","null","null","null","null", "null", "null", "null"]
+                    case "l3s12":
+                        return ["null","null","null","null","null","null", "null", "null", "null","null","null","null","null","null","null", "null", "null", "null"]
+                }
             break;
         }
     }
@@ -217,13 +409,24 @@ $( document ).ready(function() {
     }
     function winningMessage(currentLevel, scoreCounter, currentDifficulty){
         setStats(currentLevel, scoreCounter, bestStats)
-        alert(bestStats)
+
+        setTimeout(function(){$(".stats-container").removeClass("active-container")
+        $(".instructions-container").removeClass("active-container")
+        $(".game-container").removeClass("active-container")
+        $(".levelselect-container").addClass("active-container")},1500)
+        
     
     }
     var setStats = function(currentLevel, scoreToSet, bestStats){
         if(scoreToSet < bestStats[currentLevel-1] || bestStats[currentLevel-1] == "n/a"){
             bestStats[currentLevel -1] = scoreToSet
             $(`#l${currentLevel}-score`).text(scoreToSet)
+
+            setTimeout(function(){alert(`Contgratulations, your new high score for level ${currentLevel} is ${scoreToSet}!`)},500)
+
+        }
+        else{
+            setTimeout(function(){alert(`Well done on beating level ${currentLevel}, but you've not set a new high score.`)},500)
         }
 
         return bestStats
