@@ -1,39 +1,33 @@
-<img src="https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png" style="margin: 0;">
+#Light Switch
 
-Welcome Stevie-P72,
+This is a simple game, aimed to test your problem solving skills, the aim is to flip switches in the right order, to try and turn on all light bulbs at the same time
+As simple as that might sound, before coding this, I didn't think about difficulty, so whilst all of them are 'possible', it'll take you a long time...
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. You can safely delete this README.md file, or change it for your own project.
+##UX
+This website is for people looking to play a game on the internet.
+Someone who has never played the game before can easily review the instructions, whilst more experienced players can review their current session stats to try and beat each level in the fewest moves possible
 
-## Gitpod Reminders
+##features
+Fully operational game
+Stored instructions, score stats.
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+##Technologies Used
+Jquery was the most used technology, adding and removing classes as well as animations for every action on the website.
+I have also used hover.css in order to enhance the appearance of the nav-bar.
 
-`python3 -m http.server`
 
-A blue button should appear to click: *Make Public*,
+##Testing
+I have reviewed the display on a variety of screen sizes, to ensure it always displays correctly.
+All levels have been completed, to ensure they are possible, and that their stats get appropriately recorded.
 
-Another blue button should appear to click: *Open Browser*.
+##Deployment
+This website was deployed on GitHub Pages
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+##Credits
+Shoutout my netflix password for inspiring the name of the game...
 
-A blue button should appear to click: *Make Public*,
+###Code
+Some snippets of code were sourced from various websites (each credited within the code itself)
 
-Another blue button should appear to click: *Open Browser*.
-
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the backend lessons.
-
-## Updates Since The Instructional Video
-
-We continually tweak and adjust this template to help give you the best experience. Here are the updates since the original video was made:
-
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
-
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
-
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
-
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
-
---------
-
-Happy coding!
+###Media
+Photos used on the site were licensed to use, share or modify, even commercially, and were obtained from google.
