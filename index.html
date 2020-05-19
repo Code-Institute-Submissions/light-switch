@@ -4,19 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <!-- Load Jasmine Framnework-->
-    <!---<script src="https://cdnjs.cloudflare.com/ajax/libs/jasmine/3.5.0/jasmine.js" integrity="sha256-PePX8Jc4TIxzzVz0Qe4NsH3OUU8+Y49DBWvYgggNqkY=" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jasmine/3.5.0/jasmine-html.js" integrity="sha256-qazAASTTgUrq9SOYkPSB3oEuqbhn+2j4kxGkVZ0GKjY=" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jasmine/3.5.0/boot.js" integrity="sha256-HG8TKl0T65NyELmbUoo0H7/a1e++smYdXXtuuEsyKok=" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jasmine/3.5.0/jasmine.min.css" integrity="sha256-US46s8iE//XjSFdoo70XyCnsGALF7ggrHbPCHqvoRn4=" crossorigin="anonymous" />-->
-    <!--Jquery CDN-->
+   
     <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
 
 
     <script src="assets/js/script.js"></script>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Lato|Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css" type="text/css">
     <link rel="stylesheet" href="assets/css/style.css">
+
     <title>Light-Switch</title>
 </head>
 <body>
@@ -45,16 +42,16 @@
                                 <div class="row">
                                     <!--add hover and on click animations-->
                                     <div class="col-6 col-sm-12  nav-option-container">
-                                        <ul class="list-item" id="instructions-link">Instructions</ul>
+                                        <ul class="list-item hvr-underline-from-center" id="instructions-link">Instructions</ul>
                                     </div>
                                     <div class="col-6 col-sm-12 nav-option-container">
-                                        <ul class="list-item" id="reset-link">Reset</ul>
+                                        <ul class="list-item hvr-underline-from-center" id="reset-link">Reset</ul>
                                     </div>
                                     <div class="col-6 col-sm-12 nav-option-container">
-                                        <ul class="list-item" id="level-select-link">Select Level</ul>
+                                        <ul class="list-item hvr-underline-from-center" id="level-select-link">Select Level</ul>
                                     </div>
                                     <div class="col-6 col-sm-12 nav-option-container">
-                                        <ul class="list-item" id="stats-link">View Stats</ul>
+                                        <ul class="list-item hvr-underline-from-center" id="stats-link">View Stats</ul>
                                     </div>
                                 </div>
                             </ul>
@@ -330,11 +327,9 @@
                             <hr>       
 
                         </div>
-                        <div class="col-12 col-sm-6">
+                        <div class="col-12">
                         <!--need to style this, currently too much text, goes off screen on smaller screens-->
-                            <p class="content-text">The goal is to get every light bulb switched on at the same time.</p>
-                            <p class="content-text">The switches along the bottom will turn on or off a select group of the bulbs</p>
-                            <p class="content-text">By pressing a combination of these switches, it is possible to turn on every light, but extremely difficult</p>
+                            <p class="content-text">The goal is to get every light bulb switched on at the same time, by clicking the switches at the bottom of the screen.</p>
                             <p class="content-text">If you want to restart any level, please press the reset button in the menu</p>
                             <p class="content-text">When you complete a level, your score is the number of switches you pressed to turn them on, to see your best score, take a look at your Stats!</p>
                         </div>

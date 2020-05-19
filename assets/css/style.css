@@ -1,5 +1,4 @@
 /*-------------------- Fonts */
-
 .header-text{
     font-family: "Roboto",sans-serif;
     font-size: 2em;
@@ -25,7 +24,16 @@
     font-size: 1.2em;
     text-align: center;
 }
+/*-------------------- HVR.CSS */
+
+.hvr-underline-from-center::before{
+    background-color: aliceblue
+}
+.hvr-underline-from-center{
+    display: block;
+}
 /*-------------------- Body */
+
 /*-------- Code adapted from this link - https://css-tricks.com/perfect-full-page-background-image/     */
 .bg-image{  
     min-height: 100%;
@@ -47,6 +55,7 @@
         overflow: hidden;
     }
 }
+
 /*------ End of Adapted Code */
 /*-------------------- Basic formatting */
 .no-margin{
@@ -181,7 +190,9 @@ ul{
     width: 80%;
     background-color: red; 
 }
-
+.switch-pressed{
+    background-color: darkred;
+}
 
 .active-level, .active-container{
     display: block;

@@ -359,10 +359,17 @@ $( document ).ready(function() {
     
 
     // Code Adapted From https://stackoverflow.com/questions/10578566/jquery-this-id-return-undefined8
+    
     $(".switch").click(function (e) {
         scoreCounter = scoreCounter+1
+
         //sets switch click equal to id of switch clicked
         switchClick = e.target.id
+
+        //removes dark red switch styling form all to prevent overlap
+        $(".switch-pressed").removeClass("switch-pressed")
+        //adds dark red switch styling to switch clicked
+        $(`#${switchClick}`).addClass("switch-pressed")
         //inputs switch click into switch builder to return array of actions for the bulbs
         changeArray = switchBuilder(currentLevel, switchClick)
         
@@ -370,6 +377,8 @@ $( document ).ready(function() {
         makeChanges(changeArray)
         //checks to see if level is complete
         checkIfComplete(currentDifficulty)
+        //removes dark red switch styling
+        setTimeout(function(){$(`#${switchClick}`).removeClass("switch-pressed")}, 200)
     });
     //end of adapted code
     function makeChanges(changeArray){
