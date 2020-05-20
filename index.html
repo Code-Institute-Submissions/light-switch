@@ -7,8 +7,9 @@
    
     <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
 
-
+    <script src="assets/js/switchBuilder.js"></script>
     <script src="assets/js/script.js"></script>
+    
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Lato|Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css" type="text/css">
@@ -40,7 +41,6 @@
                         <div class="col-12">
                             <ul>    
                                 <div class="row">
-                                    <!--add hover and on click animations-->
                                     <div class="col-6 col-sm-12  nav-option-container">
                                         <ul class="list-item hvr-underline-from-center" id="instructions-link">Instructions</ul>
                                     </div>
@@ -182,7 +182,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="row switch-container"><!--add hover and onclick animations for switches-->
+                    <div class="row switch-container">
                         <div class="col-12 switch-section">
                             <div class="level-1 switch-section active-level">
                                 <div class="row switch-section">
@@ -328,131 +328,110 @@
 
                         </div>
                         <div class="col-12">
-                        <!--need to style this, currently too much text, goes off screen on smaller screens-->
-                            <p class="content-text">The goal is to get every light bulb switched on at the same time, by clicking the switches at the bottom of the screen.</p>
-                            <p class="content-text">If you want to restart any level, please press the reset button in the menu</p>
-                            <p class="content-text">When you complete a level, your score is the number of switches you pressed to turn them on, to see your best score, take a look at your Stats!</p>
+                            <p class="instructions-content content-text">The goal is to get every light bulb switched on at the same time, by clicking the switches at the bottom of the screen.</p>
+                            <p class="instructions-content content-text">If you want to restart any level, please press the reset button in the menu</p>
+                            <p class="instructions-content content-text">When you complete a level, your score is the number of switches you pressed to turn them on, to see your best score, take a look at your Stats!</p>
+                            
                         </div>
                     </div>
                 </div>
-                <div class="levelselect-container active-container">
-                    <div class="row full-size">
-                        <div class="col-12 container-title">
-                            <div class="exit-box"><button class="exit-btn"><span class="close-symbol mx-auto">x</span></button></div>
-                            <h2 class="header-text container-header">Select Level</h2>     
-                            <hr>            
-                        </div>
-                        <div class="col-12 diff-section"><h3 class="header-text mini-header">Easy</h3>
-                            <div class="row">
-                                <div class="col-3"><button id="easy-l1" class = "diff-btn easy-lvl"><span class = "level-btn-text">1</span></button></div>
-                                <div class="col-3"><button id="easy-l2" class = "diff-btn easy-lvl"><span class = "level-btn-text">2</span></button></div>
-                                <div class="col-3"><button id="easy-l3" class = "diff-btn easy-lvl"><span class = "level-btn-text">3</span></button></div>
-                                <div class="col-3"><button id="easy-l4" class = "diff-btn easy-lvl"><span class = "level-btn-text">4</span></button></div>
+                    <div class="levelselect-container active-container">
+                        <div class="row full-size shrink-small">
+                            <div class="col-12 container-title">
+                                <div class="exit-box"><button class="exit-btn"><span class="close-symbol mx-auto">x</span></button></div>
+                                <h2 class="header-text container-header">Select Level</h2>     
+                                <hr>            
                             </div>
-                        </div>
+                            <div class="col-12 diff-section"><h3 class="header-text mini-header">Easy</h3>
+                                <div class="row">
+                                    <div class="col-3"><button id="easy-l1" class = "diff-btn easy-lvl"><span class = "level-btn-text">1</span></button></div>
+                                    <div class="col-3"><button id="easy-l2" class = "diff-btn easy-lvl"><span class = "level-btn-text">2</span></button></div>
+                                    <div class="col-3"><button id="easy-l3" class = "diff-btn easy-lvl"><span class = "level-btn-text">3</span></button></div>
+                                    <div class="col-3"><button id="easy-l4" class = "diff-btn easy-lvl"><span class = "level-btn-text">4</span></button></div>
+                                </div>
+                            </div>
 
-                        <div class="col-12 diff-section"><h3 class="header-text mini-header">Medium</h3>
-                            <div class="row">
-                                <div class="col-3"><button id="med-l1" class = "diff-btn med-lvl"><span class = "level-btn-text">5</span></button></div>
-                                <div class="col-3"><button id="med-l2" class = "diff-btn med-lvl"><span class = "level-btn-text">6</span></button></div>
-                                <div class="col-3"><button id="med-l3" class = "diff-btn med-lvl"><span class = "level-btn-text">7</span></button></div>
-                                <div class="col-3"><button id="med-l4" class = "diff-btn med-lvl"><span class = "level-btn-text">8</span></button></div>
+                            <div class="col-12 diff-section"><h3 class="header-text mini-header">Medium</h3>
+                                <div class="row">
+                                    <div class="col-3"><button id="med-l1" class = "diff-btn med-lvl"><span class = "level-btn-text">5</span></button></div>
+                                    <div class="col-3"><button id="med-l2" class = "diff-btn med-lvl"><span class = "level-btn-text">6</span></button></div>
+                                    <div class="col-3"><button id="med-l3" class = "diff-btn med-lvl"><span class = "level-btn-text">7</span></button></div>
+                                    <div class="col-3"><button id="med-l4" class = "diff-btn med-lvl"><span class = "level-btn-text">8</span></button></div>
+                                </div>
+                            </div>
+                            <div class="col-12 diff-section"><h3 class="header-text mini-header">Hard</h3>
+                                <div class="row">
+                                    <div class="col-3"><button id="hard-l1" class = "diff-btn hard-lvl"><span class = "level-btn-text">9</span></button></div>
+                                    <div class="col-3"><button id="hard-l2" class = "diff-btn hard-lvl"><span class = "level-btn-text">10</span></button></div>
+                                    <div class="col-3"><button id="hard-l3" class = "diff-btn hard-lvl"><span class = "level-btn-text">11</span></button></div>
+                                    <div class="col-3"><button id="hard-l4" class = "diff-btn hard-lvl"><span class = "level-btn-text">12</span></button></div>
+                                </div>
                             </div>
                         </div>
-                        <div class="col-12 diff-section"><h3 class="header-text mini-header">Hard</h3>
-                            <div class="row">
-                                <div class="col-3"><button id="hard-l1" class = "diff-btn hard-lvl"><span class = "level-btn-text">9</span></button></div>
-                                <div class="col-3"><button id="hard-l2" class = "diff-btn hard-lvl"><span class = "level-btn-text">10</span></button></div>
-                                <div class="col-3"><button id="hard-l3" class = "diff-btn hard-lvl"><span class = "level-btn-text">11</span></button></div>
-                                <div class="col-3"><button id="hard-l4" class = "diff-btn hard-lvl"><span class = "level-btn-text">12</span></button></div>
+                    </div>
+                    <div class="stats-container">
+                        <div class="row full-size">
+                            <div class="col-12 container-title">
+                                <div class="exit-box"><button class="exit-btn"><span class="close-symbol mx-auto">x</span></button></div>
+                                <h2 class="header-text container-header">Stats</h2>     
+                                <hr>            
+                            </div>
+                            <div class="col-3 stats-level-container">
+                                <h3 class="level-title">Level 1</h3>
+                                <p class="content-text" id="l1-score">N/A</p>
+                            </div>
+                            <div class="col-3 stats-level-container">
+                                <h3 class="level-title">Level 2</h3>
+                                <p class="content-text" id="l2-score">N/A</p>
+                            </div>
+                            <div class="col-3 stats-level-container">
+                                <h3 class="level-title">Level 3</h3>
+                                <p class="content-text" id="l3-score">N/A</p>
+                            </div>
+                            <div class="col-3 stats-level-container">
+                                <h3 class="level-title">Level 4</h3>
+                                <p class="content-text" id="l4-score">N/A</p>
+                            </div>
+                            <div class="col-3 stats-level-container">
+                                <h3 class="level-title">Level 5</h3>
+                                <p class="content-text" id="l5-score">N/A</p>
+                            </div>
+                            <div class="col-3 stats-level-container">
+                                <h3 class="level-title">Level 6</h3>
+                                <p class="content-text" id="l6-score">N/A</p>
+                            </div>
+                            <div class="col-3 stats-level-container">
+                                <h3 class="level-title">Level 7</h3>
+                                <p class="content-text" id="l7-score">N/A</p>
+                            </div>
+                            <div class="col-3 stats-level-container">
+                                <h3 class="level-title">Level 8</h3>
+                                <p class="content-text" id="l8-score">N/A</p>
+                            </div>
+                            <div class="col-3 stats-level-container">
+                                <h3 class="level-title">Level 9</h3>
+                                <p class="content-text" id="l9-score">N/A</p>
+                            </div>
+                            <div class="col-3 stats-level-container">
+                                <h3 class="level-title">Level 10</h3>
+                                <p class="content-text" id="l10-score">N/A</p>
+                            </div>
+                            <div class="col-3 stats-level-container">
+                                <h3 class="level-title">Level 11</h3>
+                                <p class="content-text" id="l11-score">N/A</p>
+                            </div>
+                            <div class="col-3 stats-level-container">
+                                <h3 class="level-title">Level 12</h3>
+                                <p class="content-text" id="l12-score">N/A</p>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="stats-container">
-                    <div class="row full-size">
-                        <div class="col-12 container-title">
-                            <div class="exit-box"><button class="exit-btn"><span class="close-symbol mx-auto">x</span></button></div>
-                            <h2 class="header-text container-header">Stats</h2>     
-                            <hr>            
-                        </div>
-                        <!--add borders to each level?-->
-                        <div class="col-3 stats-level-container">
-                            <h3 class="level-title">Level 1</h3>
-                            <p class="content-text" id="l1-score">N/A</p>
-                        </div>
-                        <div class="col-3 stats-level-container">
-                            <h3 class="level-title">Level 2</h3>
-                            <p class="content-text" id="l2-score">N/A</p>
-                        </div>
-                        <div class="col-3 stats-level-container">
-                            <h3 class="level-title">Level 3</h3>
-                            <p class="content-text" id="l3-score">N/A</p>
-                        </div>
-                        <div class="col-3 stats-level-container">
-                            <h3 class="level-title">Level 4</h3>
-                            <p class="content-text" id="l4-score">N/A</p>
-                        </div>
-                        <div class="col-3 stats-level-container">
-                            <h3 class="level-title">Level 5</h3>
-                            <p class="content-text" id="l5-score">N/A</p>
-                        </div>
-                        <div class="col-3 stats-level-container">
-                            <h3 class="level-title">Level 6</h3>
-                            <p class="content-text" id="l6-score">N/A</p>
-                        </div>
-                        <div class="col-3 stats-level-container">
-                            <h3 class="level-title">Level 7</h3>
-                            <p class="content-text" id="l7-score">N/A</p>
-                        </div>
-                        <div class="col-3 stats-level-container">
-                            <h3 class="level-title">Level 8</h3>
-                            <p class="content-text" id="l8-score">N/A</p>
-                        </div>
-                        <div class="col-3 stats-level-container">
-                            <h3 class="level-title">Level 9</h3>
-                            <p class="content-text" id="l9-score">N/A</p>
-                        </div>
-                        <div class="col-3 stats-level-container">
-                            <h3 class="level-title">Level 10</h3>
-                            <p class="content-text" id="l10-score">N/A</p>
-                        </div>
-                        <div class="col-3 stats-level-container">
-                            <h3 class="level-title">Level 11</h3>
-                            <p class="content-text" id="l11-score">N/A</p>
-                        </div>
-                        <div class="col-3 stats-level-container">
-                            <h3 class="level-title">Level 12</h3>
-                            <p class="content-text" id="l12-score">N/A</p>
-                        </div>
-                    </div>
-                </div>
-
             </div>
-            
-        
-        
-        
-            </div>
-        
-        
-            
-        
-
-        
             <div class="footer-container">
-        
                     <div class="container-fluid no-padding"></div>
-            
             </div>
         
         </div> 
-          
-        
-    
-    
-
-
-	
-</body>
+    </body>
 </html>

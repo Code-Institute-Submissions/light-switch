@@ -97,6 +97,7 @@
 /*-------------------- nav */
 .nav-option-container{
     padding-top: 5px;
+    cursor: pointer;
 }
 ul{
     padding-left: 0;
@@ -177,21 +178,34 @@ ul{
     height: 33%;
 }
 .switch-outline{
-    border-radius: 50%;
+    
     background-color: #4a4949;
     height: 100%;
     width: 60%;
     margin-left:20%;
     
 }
+/*-------------------- code adapted from https://www.bestcssbuttongenerator.com/#/9 */
 .switch{
-    border-radius: 50%;
-    height: 80%;
-    width: 80%;
-    background-color: red; 
+    box-shadow:inset 0px 1px 0px 0px #cf866c;
+	background:linear-gradient(to bottom, #df3b0a 5%, #bc3315 100%);
+	background-color:#df3b0a;
+	border-radius:3px;
+	border:3px solid #361b16;
+	display:inline-block;
+	cursor:pointer;
+	height: 100%;
+    width: 100%;
 }
+.switch:hover {
+	background:linear-gradient(to bottom, #bc3315 5%, #d0451b 100%);
+	background-color:#bc3315;
+}
+/*----------------end of adapted code */
+
 .switch-pressed{
     background-color: darkred;
+    background: linear-gradient(to bottom, darkred 50%, darkred 50%);
 }
 
 .active-level, .active-container{
@@ -201,8 +215,15 @@ ul{
 .instructions-container, .levelselect-container, .stats-container{
     padding: 0;
 }
-
-
+hr{
+    margin: 0
+}
+@media(min-height: 550px) and (min-width: 550px){
+    .instructions-content{
+        margin-top: 50px;
+        font-size: 1.2em;
+    }
+}
 .exit-box{
     right: 0;
     top: 0;
@@ -217,6 +238,14 @@ ul{
 }
 .close-symbol{
     color:aliceblue
+}
+@media(max-height: 400px){
+    .shrink-small{
+        height: 90%;
+    }
+    .mini-header{
+        height: 1em;
+    }
 }
 hr{
     background-color: aliceblue;
@@ -235,7 +264,7 @@ hr{
     width: 100%
 }
 .full-size{
-    height: 100%;
+    height: 90%;
 }
 .diff-btn{
     margin: 0 auto;
