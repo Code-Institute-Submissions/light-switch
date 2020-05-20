@@ -113,15 +113,14 @@ $( document ).ready(function() {
     var bulbNull = function(bulbClass){}
     
 
+   
     // Code Adapted From https://stackoverflow.com/questions/10578566/jquery-this-id-return-undefined8
-    
     $(".switch").click(function (e) {
-        
+         
         scoreCounter = scoreCounter+1
-
-        //sets switch c lick equal to id of switch clicked
+         //sets switch c lick equal to id of switch clicked
         switchClick = e.target.id
-
+        //end of adapted code
         //removes dark red switch styling form all to prevent overlap
         $(".switch-pressed").removeClass("switch-pressed")
         //adds dark red switch styling to switch clicked
@@ -137,7 +136,7 @@ $( document ).ready(function() {
         //removes dark red switch styling
         setTimeout(function(){$(`#${switchClick}`).removeClass("switch-pressed")}, 200)
     });
-    //end of adapted code
+    
     function makeChanges(changeArray){
         //for each object in the array, takes relevant action on the relevant bulb
         for(let i = 0; i < changeArray.length ; i++){

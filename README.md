@@ -21,13 +21,16 @@ I have reviewed the display on a variety of screen sizes, to ensure it always di
 All levels have been completed, to ensure they are possible, and that their stats get appropriately recorded.
 
 ##Deployment
-This website was deployed on GitHub Pages
+This website was deployed on GitHub Pages, after being written using gitpod.
 
 ##Credits
 Shoutout my netflix password for inspiring the name of the game...
 
 ###Code
-Some snippets of code were sourced from various websites (each credited within the code itself)
+Some snippets of code were sourced from various websites (each credited within the code itself):
+https://www.bestcssbuttongenerator.com/#/9
+https://css-tricks.com/perfect-full-page-background-image/
+https://stackoverflow.com/questions/10578566/jquery-this-id-return-undefined8
 
 ###Media
 Photos used on the site were licensed to use, share or modify, even commercially, and were obtained from google.

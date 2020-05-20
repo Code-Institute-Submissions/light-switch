@@ -44,6 +44,7 @@
     top: 0;
     left: 0;
 }
+/*------ End of Adapted Code */
 @media(max-width: 1280px){
     .bg-image{
         left: 50%;
@@ -56,7 +57,7 @@
     }
 }
 
-/*------ End of Adapted Code */
+
 /*-------------------- Basic formatting */
 .no-margin{
     margin: 0;
